@@ -3,7 +3,7 @@
       
       document.querySelector('button').addEventListener('click', () => {
         console.log('clicked');
-        navigator.registerProtocolHandler('web+cooiliuyt', 'https://simsim2006.github.io/protocolhandler/?burger=%s', 'Burger');
+        navigator.registerProtocolHandler('sms', 'https://simsim2006.github.io/protocolhandler/?sms=%s', 'SMS APP');
       });
 })();
     
