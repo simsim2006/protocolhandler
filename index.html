@@ -3,14 +3,12 @@
 <head>
   <title>Web Protocol Handler Sample - Register</title>
   <script type="text/javascript">
-    (async() => {
       console.log('test');
       
       document.querySelector('button').addEventListener('click', () => {
         console.log('clicked');
         navigator.registerProtocolHandler('web+cooiliuyt', './?burger=%s');
       });
-    })();
     
     
   </script>
