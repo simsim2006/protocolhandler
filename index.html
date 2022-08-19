@@ -5,14 +5,20 @@
   <script type="text/javascript">
     (async() => {
       console.log('test');
-      navigator.registerProtocolHandler('web+demo', './?uri=%s');
-      // navigator.registerProtocolHandler("web+burger", "https://simsim2006.github.io/protocolhandler/?uri=%s", "Burger handler");
+      
+      document.querySelector('button').addEventListener('click', () => {
+        console.log('clicked');
+        navigator.registerProtocolHandler('web+cooiliuyt', './?burger=%s');
+      });
     })();
+    
+    
   </script>
 </head>
 <body>
   <h1>Web Protocol Handler Sample</h1>
+  <button>register</button>
   <p>This web page will install a web protocol handler for the <code>web+burger:</code> protocol.</p>
-  <a href="web+demo:cheeseburger">link</a>
+  <a href="web+cooiliuyt:cheeseburger">link</a>
 </body>
 </html>
