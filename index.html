@@ -3,8 +3,11 @@
 <head>
   <title>Web Protocol Handler Sample - Register</title>
   <script type="text/javascript">
-    navigator.registerProtocolHandler('web+demo', './?uri=%s');
-    // navigator.registerProtocolHandler("web+burger", "https://simsim2006.github.io/protocolhandler/?uri=%s", "Burger handler");
+    (async() => {
+      console.log('test');
+      navigator.registerProtocolHandler('web+demo', './?uri=%s');
+      // navigator.registerProtocolHandler("web+burger", "https://simsim2006.github.io/protocolhandler/?uri=%s", "Burger handler");
+    })();
   </script>
 </head>
 <body>
